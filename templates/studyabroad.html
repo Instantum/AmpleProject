@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+<b>Study Abroad</b><br/>
+Ample has it's smooth network with highly reputed college and university around the world.
+Varieties of academic and professional courses are of your choice is the merits of study abroad program of ample.
+Features:<br/> 
+
+- Highly reputed colleges and universities.<br/> 
+- Worldwide accepted degree.<br/> 
+- Subject of your choice.<br/> 
+- Perfect pathway for qualified manpower.<br/> 
+
+Countries we serve you are:
+
+
+<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('uk') }}"> <button type="button">UK<br/> 
+     <img src="{{ url_for('static',filename= 'images/british.gif') }}" border="0" height="170" width="190"></button> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('usa') }}"><button type="button">USA<br/>
+      <img src="{{ url_for('static',filename= 'images/america.jpg') }}" border="0" height="170" width="190"></button></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('canada') }}"><button type="button">Canada<br/>
+      <img src="{{ url_for('static',filename= 'images/canada.png') }}" border="0" height="170" width="190"></button></a><br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('australia') }}"><button type="button">Australia<br/>
+      <img src="{{ url_for('static',filename= 'images/australian.jpg') }}" border="0" height="170" width="190"></button></a>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('newzealand') }}"><button type="button">NewZealand<br/>
+      <img src="{{ url_for('static',filename= 'images/newzealand.jpg') }}" border="0" height="170" width="190"></button></a><br/><br/><br/>
+
+{% endblock %}

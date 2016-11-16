@@ -40,6 +40,30 @@ def ielts():
 def toefl():
     return render_template("toefl.html")
 
+@app.route('/usa')
+def usa():
+    return render_template("usa.html")
+
+@app.route('/uk')
+def uk():
+    return render_template("uk.html")
+
+@app.route('/australia')
+def australia():
+    return render_template("australia.html")
+
+@app.route('/canada')
+def canada():
+    return render_template("canada.html")
+
+@app.route('/newzealand')
+def newzealand():
+    return render_template("newzealand.html")
+
+@app.route('/studyabroad')
+def studyabroad():
+    return render_template("studyabroad.html")
+
 
 if __name__ == "__main__":
     app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'

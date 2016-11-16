@@ -9,30 +9,31 @@
 
 </head> 
 <body color = "#37FDFC">
-<header>
-
+<header class="navbar-fixed-top">
+<div style ="background-color: #00BFFF">
     <div>
       <a class="navbar-brand" href="#">
         <img style="max-width:800px; margin-top: -22px;" src="{{ url_for('static',filename= 'images/logo.jpg') }}"  >
       </a>
      
+<br/><br/><br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+
+
 <nav class="navbar nav-pills">
-  <div class="container-fluid">
+  
     
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
-        <li class="active"><a href="{{ url_for('aboutus') }}">About Us</a></li>
+        <li class="active"><a class = "nohover" href="{{ url_for('home') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color="black">Home</font></a></li>
+
+        <li class="active"><a href="{{ url_for('aboutus') }}"><font size="4" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us</font></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="active"><a href="{{ url_for('studyabroad') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" color="black">Study Abroad</font></a></li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true"><font size="4" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Services </font><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -45,7 +46,7 @@
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gallery <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><font size="4" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery </font><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -62,20 +63,92 @@
     </div>
   </div>
 </nav>
-
+</div>
 
 </header>
+<section class="fixed-section">
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<hr>
 <div class="row">
   <div class="col-md-1"></div>
   <div class="col-md-10">
   {% block body %}
 
  {% endblock %}
- </div>
-  <div class="col-md-1"></div>
 
+ </div>
+
+  <div class="col-md-1"></div>
+</div>
+ <hr>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-3">
+    <b>Quick Links </b>
+    <ul>
+    <li> Apply now </li>
+    <li>News and Events</li>
+    <li>TOEFL</li>
+    <li>IELTS</li>
+    <li>Study Abroad</li>
+    </ul>
+
+  </div>
+
+  <div class="col-md-2">
+    <b> &nbsp;&nbsp;&nbsp;Study in</b><br/>
+   
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('uk') }}">UK</a><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('usa') }}">USA</a><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('canada') }}">Canada</a><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('australia') }}">Australia</a><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('newzealand') }}">NewZealand</a><br/>
+     
+   
+
+  </div>
+
+  <div class="col-md-3">
+    <b>Contact Us</b>
+    <ul>
+      
+      <li>Nepal Office: +97714421257</li>
+      <li>Uk Office: +44 (0)20 34909600</li>
+      <li>Canada Office: __________</li>
+     
+    </ul>
+
+  </div>
+  <div class="col-md-2">
+    <b>Keep in touch</b><br/>
+
+ <a href="https://www.facebook.com/alfabetainstitute/" target="_blank" class="facebook">
+            <img src="{{ url_for('static',filename= 'images/facebook.png') }}" alt="Facebook">
+        </a>
+        
+&nbsp;
+<a href="https://np.linkedin.com/in/alfa-beta-951b02108" target="_blank" class="linkedin">
+            <img src="{{ url_for('static',filename= 'images/linkedin.png') }}" alt="Linkedin">
+        </a>
+     &nbsp; 
+            <a href="http://www.twitter.com/TheAlfaBeta" target="_blank" class="twitter">
+            <img src="{{ url_for('static',filename= 'images/twitter.png') }}" alt="Twitter">
+        </a>
+        &nbsp;
+            <a href="https://www.youtube.com/channel/UCuiif1nKlt-DJzKGYcZ-MLQ" target="_blank" class="youtube">
+            <img src="{{ url_for('static',filename= 'images/youtube.png') }}" alt="Youtube">
+        </a>
+        
  
 
 
+  </div>
+  <div class="col-md-1"></div>
+</div>
+ <hr>
+<br/>
+<center>© Copyright 2016. All Right Reserved. Instantum </center>
+</section>
  </body>
  </html>
